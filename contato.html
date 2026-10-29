@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fcfbf9">
+  <meta name="description" content="Canais de contato e expediente editorial do blog Sabores & Origens da Universidade Vila Velha (UVV).">
+  <title>Redação & Contato  Sabores & Origens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header>
+    <div class="container">
+      <div class="top-bar">
+        <span>Edição Acadêmica - Universidade Vila Velha</span>
+        <span>Vila Velha, Espírito Santo</span>
+      </div>
+      
+      <div class="brand-masthead">
+        <h1 class="brand-title">Sabores & Origens</h1>
+        <p class="brand-tagline">Caderno independente de receitas, técnica culinária e cultura da mesa</p>
+      </div>
+    </div>
+
+    <nav aria-label="Navegação Principal">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="receitas.html">Receitas</a></li>
+          <li><a href="tecnicas.html">Técnicas Culinárias</a></li>
+          <li><a href="harmonizacao.html">Harmonização</a></li>
+          <li><a href="contato.html" class="active">Contatos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <div class="container">
+
+      <header class="page-masthead">
+        <div class="page-category">Expediente Editorial - Atendimento</div>
+        <h2>Fale com a equipe de redação</h2>
+        <p>
+          Sugestões de pautas, correções técnicas em fichas de receitas ou dúvidas sobre 
+          metodologias culinárias podem ser encaminhadas diretamente pelo formulário abaixo
+        </p>
+      </header>
+      <section class="contact-grid">
+        <aside class="contact-meta-col">
+          <h3>Expediente & Localização</h3>
+          <p>
+            O Sabores & Origens opera como um laboratório de conteúdo editorial e desenvolvimento web, 
+            sediado no campus principal da Universidade Vila Velha
+          </p>
+
+          <dl class="contact-details">
+            <div class="contact-detail-row">
+              <dt>Endereço Acadêmico</dt>
+              <dd>Universidade Vila Velha (UVV)<br>Avenida Comissário José Dantas de Melo, 21<br>Boa Vista, Vila Velha  ES, 29102-920</dd>
+            </div>
+
+            <div class="contact-detail-row">
+              <dt>Correspondência Eletrônica</dt>
+              <dd>redacao@saboresorigens.com.br</dd>
+            </div>
+
+            <div class="contact-detail-row">
+              <dt>Telefone Institucional</dt>
+              <dd>+55 (27) 3421-2000</dd>
+            </div>
+
+            <div class="contact-detail-row">
+              <dt>Período de Atendimento</dt>
+              <dd>Segunda a sexta-feira, das 09h às 17h (horário de Brasília)</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <article class="editorial-form">
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Mensagem registrada no sistema acadêmico da UVV'); this.reset();">
+            
+            <div class="form-field">
+              <label for="campo-nome">Nome completo</label>
+              <input type="text" id="campo-nome" name="nome" autocomplete="name" placeholder="Ex: Maria Silva" required>
+            </div>
+
+            <div class="form-field">
+              <label for="campo-email">Endereço de e-mail</label>
+              <input type="email" id="campo-email" name="email" inputmode="email" autocomplete="email" spellcheck="false" placeholder="maria.silva@exemplo.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="campo-motivo">Natureza do contato</label>
+              <select id="campo-motivo" name="motivo" required>
+                <option value="">Selecione o assunto</option>
+                <option value="duvida-receita">Dúvida sobre execução de receita</option>
+                <option value="sugestao-tecnica">Sugestão de ensaio técnico ou matéria</option>
+                <option value="colaboracao-academica">Projeto de pesquisa ou colaboração acadêmica</option>
+                <option value="outro">Outras informações</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="campo-mensagem">Mensagem</label>
+              <textarea id="campo-mensagem" name="mensagem" rows="6" placeholder="Descreva sua observação, pergunta ou proposta com clareza" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar mensagem para a redação</button>
+          </form>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-col">
+          <h4>Sabores & Origens</h4>
+          <p>
+            Publicação acadêmica de gastronomia e jornalismo culinário desenvolvida para 
+            a disciplina de Desenvolvimento Web na Universidade Vila Velha (UVV)
+            Projetada sob princípios de tipografia editorial, código semântico limpo e acessibilidade
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Seções do Site</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="receitas.html">Receitas</a></li>
+            <li><a href="tecnicas.html">Técnicas Culinárias</a></li>
+            <li><a href="harmonizacao.html">Harmonização</a></li>
+            <li><a href="contato.html">Contatos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <p>Universidade Vila Velha  UVV</p>
+          <p>Campus Boa Vista, Vila Velha, ES</p>
+          <p>Redação: contato@saboresorigens.com.br</p>
+        </div>
+      </div>
+      <div class="footer-credit">
+        <span>© 2026 Sabores & Origens - Conteúdo acadêmico desenvolvido para a UVV</span>
+        <span>HTML5 Semântico & Design Editorial</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
